@@ -1,8 +1,8 @@
 import pickle
 import os
-with open("/home/niranjan/Projects/interactive_monet/igibson_far_cam_test/dataset_dicts.pkl","rb") as f:
+with open("/srv/share/nkannabiran3/synthetic_datasets/YCB_YOLO_7_obj/dataset_dicts.pkl","rb") as f:
     data_list = pickle.load(f)
-label_path = "/home/niranjan/Projects/interactive_monet/igibson_far_cam_test/labels"
+label_path = "/srv/share/nkannabiran3/synthetic_datasets/YCB_YOLO_7_obj/labels"
 for data in data_list:
     # print(data["file_name"])
     with open(os.path.join(label_path, data["file_name"][:-4].split("/")[-1])+".txt", "w") as f:

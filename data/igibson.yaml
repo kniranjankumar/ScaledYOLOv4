@@ -1,10 +1,10 @@
 # train and val datasets (image directory or *.txt file with image paths)
-train: /srv/share/nkannabiran3/synthetic_datasets/igibson_far_cam/igibson_far_cam_train/images/  # 118k images
-val: /srv/share/nkannabiran3/synthetic_datasets/igibson_far_cam/igibson_far_cam_test/images/  # 5k images
-test: /srv/share/nkannabiran3/synthetic_datasets/igibson_far_cam/igibson_far_cam_test/images/  # 20k images for submission to https://competitions.codalab.org/competitions/20794
+train: /srv/share/nkannabiran3/synthetic_datasets/YCB_YOLO_7_obj/YCB_YOLO_7_obj_train/images/  
+val: /srv/share/nkannabiran3/synthetic_datasets/YCB_YOLO_7_obj/YCB_YOLO_7_obj_test/images/  # 5k images
+test: /srv/share/nkannabiran3/synthetic_datasets/YCB_YOLO_7_obj/YCB_YOLO_7_obj_test/images/  # 20k images for submission to https://competitions.codalab.org/competitions/20794
 
 # number of classes
-nc: 3
+nc: 7
 
 # class names
-names: ['003_cracker_box', '008_pudding_box', '002_master_chef_can']
+names: ['003_cracker_box', '008_pudding_box', '002_master_chef_can', '004_sugar_box','009_gelatin_box','005_tomato_soup_can','040_large_marker']
